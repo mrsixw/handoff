@@ -1,7 +1,6 @@
 ---
 name: handoff
 description: Write a concise, redacted handoff document so another agent can continue the current work without replaying the conversation.
-disable-model-invocation: true
 ---
 
 # Handoff
