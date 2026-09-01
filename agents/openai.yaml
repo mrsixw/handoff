@@ -1,0 +1,6 @@
+interface:
+  display_name: "Handoff"
+  short_description: "Prepare work for another agent"
+  default_prompt: "Use $handoff to write a concise continuation document for this work."
+policy:
+  allow_implicit_invocation: false
