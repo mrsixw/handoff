@@ -1,6 +1,6 @@
 ---
 name: handoff
-description: Write a concise, redacted handoff document so another agent can continue the current work without replaying the conversation.
+description: Write a concise, redacted handoff document so another agent can continue the current work without replaying the conversation. Use when the user asks to hand off, pause, or package in-progress work for another agent or session. Not for reviewing a finished session (use retro).
 ---
 
 # Handoff
@@ -8,9 +8,11 @@ description: Write a concise, redacted handoff document so another agent can con
 Create a continuation record that lets a fresh agent resume without replaying
 the conversation. Prefer authoritative current state over a narrative history.
 
-Write to the operating system's temporary directory unless the user specifies a
-durable location. Redact tokens, credentials, personal data, and sensitive
-payloads.
+Write to the location the user specifies or their standing instructions define;
+otherwise use the operating system's temporary directory. Name the file
+`handoff-<repo>-<YYYYMMDD-HHMM>.md`, using the work topic when there is no
+repository, and always report its absolute path. Redact tokens, credentials,
+personal data, and sensitive payloads.
 
 ## Record the resumable state
 
